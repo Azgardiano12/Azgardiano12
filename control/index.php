@@ -104,10 +104,10 @@
               $MODULOSS = $BD->consulta("SELECT * FROM MODULOS WHERE ID_PADRE = $MODULO_PADRE->id");
               while($M =  $MODULOSS->fetch_object()){
                 ?>
-                <li class="list-group-item panel" data-url="<?=$M->url?>"><?= $M->nombre?></li></ul> 
-                </li>
-                <?php }
-            } ?>
+                <li class="list-group-item panel" data-url="<?=$M->url?>"><a></a><?=$M->nombre?></li> 
+                <?php }?>
+                </ul></li>
+            <?php } ?>
         </ul>
       </div>
       
